@@ -1,0 +1,56 @@
+/*width: 100% fixed issues where contents weren't being aligned in the center and 
+background image wasn't spanning the whole page*/
+.appLogReg{
+    text-align:center ;
+    display: flex;
+    min-height: 100vh;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    background-image: linear-gradient(180deg, #fed800, #ff6f01, #fd2f24, #811d5e);
+    
+    width:100%;
+} 
+
+.auth-form-container, .login-form, .register-form{
+    display:flex;
+    flex-direction: column;
+}
+
+/*@media changes screen size for different devices. the specific one below is for mobile which
+we probably will not use anyway*/
+@media screen and (min-width: 600px) {
+    .auth-form-container{
+        padding: 5rem;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 0.5rem;
+    }
+}
+
+label{
+    text-align: left;
+    padding: 0.25rem 0;
+}
+
+input{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+button{
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:#aa9347;
+}
+
+.link-btn {
+    background: none;
+    color:white;
+    text-decoration: underline;
+}
